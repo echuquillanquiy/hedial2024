@@ -35,7 +35,7 @@ class CreatePatientsTable extends Migration
             $table->string('discount_weight')->nullable();
             $table->string('hepa')->nullable();
             $table->enum('serology', ['REACTIVO', 'NO REACTIVO'])->default('NO REACTIVO');
-            $table->enum('state', ['ACTIVO', 'NO ACTIVO'])->default('ACTIVO');
+            $table->enum('state', ['ACTIVO', 'INACTIVO'])->default('ACTIVO');
 
             $table->timestamps();
         });
