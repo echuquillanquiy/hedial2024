@@ -20,6 +20,7 @@ class CreateCompaniesTable extends Migration
             $table->string('description');
             $table->string('code_year',2);
             $table->string('code_ipress');
+            $table->string('logo')->nullable();
 
             $table->timestamps();
         });
