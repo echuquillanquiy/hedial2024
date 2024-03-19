@@ -16,9 +16,7 @@ class CreateSessionsTable extends Migration
         Schema::create('sessions', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('order_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('patient_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->integer('sesion');
 
             $table->timestamps();
