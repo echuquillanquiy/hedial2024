@@ -22,6 +22,7 @@ class CreateOrdersTable extends Migration
             $table->foreignId('hall_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('category_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('triage_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('procedure_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
 
             $table->timestamps();
         });
