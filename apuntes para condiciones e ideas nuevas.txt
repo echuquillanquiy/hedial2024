@@ -1,0 +1,2 @@
+* condicionar con switch los procedimientos para generar los diferente formatos.
+
