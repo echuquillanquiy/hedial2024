@@ -36,6 +36,7 @@ class CreatePatientsTable extends Migration
             $table->string('hepa')->nullable();
             $table->enum('serology', ['REACTIVO', 'NO REACTIVO'])->default('NO REACTIVO');
             $table->enum('state', ['ACTIVO', 'INACTIVO'])->default('ACTIVO');
+            $table->string('justify')->nullable();
 
             $table->timestamps();
         });
